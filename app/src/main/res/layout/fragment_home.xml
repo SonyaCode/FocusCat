@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/grassBackground"
+        android:layout_width="549dp"
+        android:layout_height="268dp"
+        android:layout_marginTop="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
+        android:text="Money: $"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/feedMilk"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/milk"
+        app:layout_constraintEnd_toStartOf="@+id/feedFish"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/feedChicken"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <ImageButton
+        android:id="@+id/feedChicken"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chicken_leg"
+        app:layout_constraintEnd_toStartOf="@+id/feedMilk"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Shop"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Tasks"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/shop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/grayWhiteCat"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/gray_white_cat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/grassBackground" />
+
+    <ImageView
+        android:id="@+id/calicoCat"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/calico_cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/grassBackground" />
+
+    <ImageView
+        android:id="@+id/blackCat"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/black_cat"
+        app:layout_constraintBottom_toBottomOf="@+id/grassBackground"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/orangeCat"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/orange_cat"
+        app:layout_constraintBottom_toBottomOf="@+id/grassBackground"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/feedFish"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tuna_fish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/feedMilk"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="413dp" />
+
+    <TextView
+        android:id="@+id/numOfChicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/feedChicken"
+        app:layout_constraintStart_toStartOf="@+id/feedChicken"
+        app:layout_constraintTop_toBottomOf="@+id/feedChicken" />
+
+    <TextView
+        android:id="@+id/numOfMilk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/feedMilk"
+        app:layout_constraintStart_toStartOf="@+id/feedMilk"
+        app:layout_constraintTop_toBottomOf="@+id/feedMilk" />
+
+    <TextView
+        android:id="@+id/numOfFish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/feedFish"
+        app:layout_constraintStart_toStartOf="@+id/feedFish"
+        app:layout_constraintTop_toBottomOf="@+id/feedFish" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetFragment">
+
+    <TextView
+        android:id="@+id/rectangle"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rectangle"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet" />
+
+    <Button
+        android:id="@+id/buyBlackCat"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="Buy"
+        app:layout_constraintEnd_toEndOf="@+id/blackCatLabel"
+        app:layout_constraintStart_toStartOf="@+id/blackCatLabel"
+        app:layout_constraintTop_toBottomOf="@+id/blackCatLabel" />
+
+    <TextView
+        android:id="@+id/calicoCatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Calico Cat - $50"
+        app:layout_constraintEnd_toEndOf="@+id/calicoCat"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/calicoCat"
+        app:layout_constraintTop_toBottomOf="@+id/calicoCat" />
+
+    <TextView
+        android:id="@+id/orangeCatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Orange Cat - $50"
+        app:layout_constraintEnd_toEndOf="@+id/orangeCat"
+        app:layout_constraintStart_toStartOf="@+id/orangeCat"
+        app:layout_constraintTop_toBottomOf="@+id/orangeCat" />
+
+    <ImageView
+        android:id="@+id/blackCat"
+        android:layout_width="105dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/black_cat"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/petTab" />
+
+    <ImageView
+        android:id="@+id/orangeCat"
+        android:layout_width="105dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/orange_cat"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/buyCalicoCat" />
+
+    <Button
+        android:id="@+id/foodTab"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:backgroundTint="#FF9991"
+        android:text="Food"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buyOrangeCat"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="Buy"
+        app:layout_constraintEnd_toEndOf="@+id/orangeCatLabel"
+        app:layout_constraintStart_toStartOf="@+id/orangeCatLabel"
+        app:layout_constraintTop_toBottomOf="@+id/orangeCatLabel" />
+
+    <TextView
+        android:id="@+id/blackCatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Black Cat - $50"
+        app:layout_constraintEnd_toEndOf="@+id/blackCat"
+        app:layout_constraintStart_toStartOf="@+id/blackCat"
+        app:layout_constraintTop_toBottomOf="@+id/blackCat" />
+
+    <ImageView
+        android:id="@+id/calicoCat"
+        android:layout_width="105dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/calico_cat"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/foodTab" />
+
+    <Button
+        android:id="@+id/buyCalicoCat"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="Buy"
+        app:layout_constraintEnd_toEndOf="@+id/calicoCatLabel"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/calicoCatLabel"
+        app:layout_constraintTop_toBottomOf="@+id/calicoCatLabel" />
+
+    <Button
+        android:id="@+id/petTab"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:backgroundTint="#F44336"
+        android:text="Cats"
+        app:cornerRadius="5dp"
+        app:layout_constraintStart_toEndOf="@+id/foodTab"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <TextView
+        android:id="@+id/pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Pet"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="112dp"
+        android:text="Money: $"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

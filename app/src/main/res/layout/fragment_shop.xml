@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopFragment">
+
+    <TextView
+        android:id="@+id/rectangle"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rectangle"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet" />
+
+    <Button
+        android:id="@+id/buyFish"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="Buy"
+        app:layout_constraintEnd_toEndOf="@+id/fishLabel"
+        app:layout_constraintStart_toStartOf="@+id/fishLabel"
+        app:layout_constraintTop_toBottomOf="@+id/fishLabel" />
+
+    <ImageView
+        android:id="@+id/fish"
+        android:layout_width="81dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="36dp"
+        android:rotation="-62"
+        android:src="@drawable/tuna_fish"
+        app:layout_constraintEnd_toEndOf="@+id/buyChicken"
+        app:layout_constraintStart_toStartOf="@+id/buyChicken"
+        app:layout_constraintTop_toBottomOf="@+id/buyChicken" />
+
+    <ImageView
+        android:id="@+id/chickenLeg"
+        android:layout_width="95dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/chicken_leg"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/foodTab" />
+
+    <TextView
+        android:id="@+id/fishLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Fish - $8"
+        app:layout_constraintEnd_toEndOf="@+id/fish"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="@+id/fish"
+        app:layout_constraintTop_toBottomOf="@+id/fish" />
+
+    <ImageView
+        android:id="@+id/milk"
+        android:layout_width="83dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/milk"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/petTab" />
+
+    <TextView
+        android:id="@+id/chickenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Chicken Leg - $5"
+        app:layout_constraintEnd_toEndOf="@+id/chickenLeg"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/chickenLeg"
+        app:layout_constraintTop_toBottomOf="@+id/chickenLeg" />
+
+    <Button
+        android:id="@+id/buyChicken"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="Buy"
+        app:layout_constraintEnd_toEndOf="@+id/chickenLabel"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/chickenLabel"
+        app:layout_constraintTop_toBottomOf="@+id/chickenLabel" />
+
+    <Button
+        android:id="@+id/buyMilk"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:text="Buy"
+        app:layout_constraintEnd_toEndOf="@+id/milkLabel"
+        app:layout_constraintStart_toStartOf="@+id/milkLabel"
+        app:layout_constraintTop_toBottomOf="@+id/milkLabel" />
+
+    <Button
+        android:id="@+id/petTab"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:backgroundTint="#FF9991"
+        android:text="Cats"
+        app:cornerRadius="5dp"
+        app:layout_constraintStart_toEndOf="@+id/foodTab"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/milkLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Milk - $3"
+        app:layout_constraintEnd_toEndOf="@+id/milk"
+        app:layout_constraintStart_toStartOf="@+id/milk"
+        app:layout_constraintTop_toBottomOf="@+id/milk" />
+
+    <Button
+        android:id="@+id/foodTab"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:backgroundTint="#F44336"
+        android:text="Food"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <TextView
+        android:id="@+id/pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Food"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="112dp"
+        android:text="Money: $"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
